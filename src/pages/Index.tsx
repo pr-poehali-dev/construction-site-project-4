@@ -438,6 +438,28 @@ const Index = () => {
 
                     </>
                   )}
+                  {index === 10 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
+                        <div className="text-center">
+                          <Icon name="Image" size={32} className="text-steel/60 mb-2 mx-auto" />
+                          <p className="text-steel/60 text-sm">Фото будет загружено</p>
+                        </div>
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
+                        <div className="text-center">
+                          <Icon name="Image" size={32} className="text-steel/60 mb-2 mx-auto" />
+                          <p className="text-steel/60 text-sm">Фото будет загружено</p>
+                        </div>
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
+                        <div className="text-center">
+                          <Icon name="Image" size={32} className="text-steel/60 mb-2 mx-auto" />
+                          <p className="text-steel/60 text-sm">Фото будет загружено</p>
+                        </div>
+                      </div>
+                    </>
+                  )}
                   {index === 11 && (
                     <>
                       <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
@@ -505,7 +527,7 @@ const Index = () => {
                       </div>
                     </>
                   )}
-                  {index !== 0 && index !== 2 && index !== 4 && index !== 11 && (
+                  {index !== 0 && index !== 2 && index !== 4 && index !== 10 && index !== 11 && (
                     <>
                       <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
                         <div className="text-center">

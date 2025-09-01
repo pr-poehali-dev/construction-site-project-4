@@ -208,26 +208,90 @@ const Index = () => {
                   </div>
                 </div>
                 
-                {/* Placeholder for photos */}
+                {/* Project photos */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
-                    <div className="text-center">
-                      <Icon name="Image" size={32} className="text-steel/60 mb-2 mx-auto" />
-                      <p className="text-steel/60 text-sm">Фото будет загружено</p>
-                    </div>
-                  </div>
-                  <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
-                    <div className="text-center">
-                      <Icon name="Image" size={32} className="text-steel/60 mb-2 mx-auto" />
-                      <p className="text-steel/60 text-sm">Фото будет загружено</p>
-                    </div>
-                  </div>
-                  <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
-                    <div className="text-center">
-                      <Icon name="Image" size={32} className="text-steel/60 mb-2 mx-auto" />
-                      <p className="text-steel/60 text-sm">Фото будет загружено</p>
-                    </div>
-                  </div>
+                  {index === 0 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/4b96e253-2efc-4f3f-b526-a3cbf8cf0372.jpg" 
+                          alt="ЖК Алхимово - монолитные работы" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/59285193-efff-49b6-9aa1-17ec154d0d90.jpg" 
+                          alt="ЖК Алхимово - общий вид комплекса" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/a589f928-d2e7-4cc2-a814-a2ab69455dce.jpg" 
+                          alt="ЖК Алхимово - строительство высотной части" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/e74049c2-2554-454c-b82f-ef9f6c2aab40.jpg" 
+                          alt="ЖК Алхимово - монолитный каркас зимой" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/fe46fafb-0492-45cb-9fe9-1c23766551e5.jpg" 
+                          alt="ЖК Алхимово - многоэтажное строительство" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/e835778b-7108-4966-84f7-d7adbb43957f.jpg" 
+                          alt="ЖК Алхимово - фасадные работы" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/e223f9fc-3d08-404e-b77a-8ac450362a37.jpg" 
+                          alt="ЖК Алхимово - завершающий этап строительства" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/f2ec8fa4-9e40-445a-926a-8aea791d53b6.jpg" 
+                          alt="ЖК Алхимово - готовый комплекс" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {index !== 0 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
+                        <div className="text-center">
+                          <Icon name="Image" size={32} className="text-steel/60 mb-2 mx-auto" />
+                          <p className="text-steel/60 text-sm">Фото будет загружено</p>
+                        </div>
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
+                        <div className="text-center">
+                          <Icon name="Image" size={32} className="text-steel/60 mb-2 mx-auto" />
+                          <p className="text-steel/60 text-sm">Фото будет загружено</p>
+                        </div>
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
+                        <div className="text-center">
+                          <Icon name="Image" size={32} className="text-steel/60 mb-2 mx-auto" />
+                          <p className="text-steel/60 text-sm">Фото будет загружено</p>
+                        </div>
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
             ))}

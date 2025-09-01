@@ -716,7 +716,53 @@ const Index = () => {
                       </div>
                     </>
                   )}
-                  {index !== 0 && index !== 1 && index !== 2 && index !== 3 && index !== 4 && index !== 5 && index !== 6 && index !== 10 && index !== 11 && (
+                  {index === 7 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/5d47932f-2de8-4cf4-9b5c-6d65769fdee2.jpg" 
+                          alt="ЖК Пятницкие Луга, ЛОС - ночная заливка бетона" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/9f66c819-4d57-453e-8036-4ef19be26cc8.jpg" 
+                          alt="ЖК Пятницкие Луга, ЛОС - монолитные работы с арматурой" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/213695b1-2848-4177-8b0a-4d3aee961640.jpg" 
+                          alt="ЖК Пятницкие Луга, ЛОС - земляные работы и котлован" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/fa3a52df-b5ee-4cce-85db-844b9ec41473.jpg" 
+                          alt="ЖК Пятницкие Луга, ЛОС - готовые железобетонные конструкции" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/2fb3f716-cafc-406e-b978-bca971c7d226.jpg" 
+                          alt="ЖК Пятницкие Луга, ЛОС - зимнее строительство" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/fb6af4ac-1691-4bc7-9b2b-4609d587b109.jpg" 
+                          alt="ЖК Пятницкие Луга, ЛОС - монолитные стены с опалубкой" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {index !== 0 && index !== 1 && index !== 2 && index !== 3 && index !== 4 && index !== 5 && index !== 6 && index !== 7 && index !== 10 && index !== 11 && (
                     <>
                       <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
                         <div className="text-center">

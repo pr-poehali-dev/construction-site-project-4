@@ -5,10 +5,54 @@ import { Badge } from "@/components/ui/badge";
 
 const Index = () => {
   const services = [
-    { icon: "HardHat", title: "Промышленное строительство", description: "Полный цикл строительства промышленных объектов" },
-    { icon: "Wrench", title: "Техническое обслуживание", description: "Профессиональное техобслуживание и ремонт" },
-    { icon: "Building2", title: "Гражданское строительство", description: "Жилые и коммерческие объекты под ключ" },
-    { icon: "Settings", title: "Инженерные системы", description: "Проектирование и монтаж инженерных сетей" }
+    { 
+      icon: "HardHat", 
+      title: "Монолитные работы", 
+      description: "МКД и ИЖС",
+      details: ["МКД", "ИЖС"]
+    },
+    { 
+      icon: "Building2", 
+      title: "Генеральный подряд", 
+      description: "Полный цикл строительства под ключ",
+      details: []
+    },
+    { 
+      icon: "Settings", 
+      title: "Инженерные сети", 
+      description: "Теплосети, водопровод, канализация",
+      details: ["Теплосети", "Водопровод", "Канализация"]
+    },
+    { 
+      icon: "Factory", 
+      title: "Промышленное строительство", 
+      description: "Склады, сортировочные центры, ангары",
+      details: ["Склады", "Сортировочные центры", "Ангары"]
+    },
+    { 
+      icon: "Truck", 
+      title: "Земляные работы", 
+      description: "Разработка котлованов, рекультивация",
+      details: ["Разработка котлованов", "Рекультивация земель"]
+    },
+    { 
+      icon: "Trees", 
+      title: "Благоустройство", 
+      description: "Комплексное благоустройство территорий",
+      details: []
+    },
+    { 
+      icon: "Building", 
+      title: "Коммерческое строительство", 
+      description: "Паркинги, спорткомплексы, МФЦ",
+      details: ["Паркинги", "Спорткомплексы", "МФЦ"]
+    },
+    { 
+      icon: "PenTool", 
+      title: "Проектирование", 
+      description: "Архитектурное и техническое проектирование",
+      details: []
+    }
   ];
 
   const projects = [
@@ -119,7 +163,16 @@ const Index = () => {
                     </div>
                   </div>
                   <h3 className="text-lg font-semibold mb-3 text-white">{service.title}</h3>
-                  <p className="text-steel-light text-sm">{service.description}</p>
+                  <p className="text-steel-light text-sm mb-3">{service.description}</p>
+                  {service.details.length > 0 && (
+                    <div className="mt-3 flex flex-wrap gap-1 justify-center">
+                      {service.details.map((detail, detailIndex) => (
+                        <Badge key={detailIndex} variant="outline" className="border-primary/30 text-xs text-steel-light">
+                          {detail}
+                        </Badge>
+                      ))}
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             ))}

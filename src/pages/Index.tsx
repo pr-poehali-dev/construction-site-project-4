@@ -794,7 +794,32 @@ const Index = () => {
                       </div>
                     </>
                   )}
-                  {index !== 0 && index !== 1 && index !== 2 && index !== 3 && index !== 4 && index !== 5 && index !== 6 && index !== 7 && index !== 8 && index !== 10 && index !== 11 && (
+                  {index === 9 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/8055b905-4841-4524-89b3-19ebe48784ad.jpg" 
+                          alt="Спорткомплекс Парк Малевича - внутренняя структура с опалубкой" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/9e204186-c295-46e1-88d9-cbdc517a8f43.jpg" 
+                          alt="Спорткомплекс Парк Малевича - монолитные конструкции в процессе" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/c533787b-aa92-40d0-bdf1-9746506f0fea.jpg" 
+                          alt="Спорткомплекс Парк Малевича - общий вид строительства с краном" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {index !== 0 && index !== 1 && index !== 2 && index !== 3 && index !== 4 && index !== 5 && index !== 6 && index !== 7 && index !== 8 && index !== 9 && index !== 10 && index !== 11 && (
                     <>
                       <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
                         <div className="text-center">

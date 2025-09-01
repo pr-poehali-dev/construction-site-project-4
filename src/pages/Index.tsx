@@ -270,6 +270,108 @@ const Index = () => {
                       </div>
                     </>
                   )}
+                  {index === 10 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/1d95044b-479f-4a07-866c-3fee1a5c78c9.jpg" 
+                          alt="Банный комплекс Парк Малевича - армирование плиты" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/356d1752-0c01-47c1-ad68-3199f07b65e0.jpg" 
+                          alt="Банный комплекс Парк Малевича - фундаментная плита" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/83deb01e-b0c3-4ae3-9911-e02d6bba7cb0.jpg" 
+                          alt="Банный комплекс Парк Малевича - зимние работы" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/f2e5d9ab-f28b-48db-91f5-bbcbda955d97.jpg" 
+                          alt="Банный комплекс Парк Малевича - монтаж опалубки" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/026fa085-775e-416e-b748-79c1d3a128c5.jpg" 
+                          alt="Банный комплекс Парк Малевича - армирование перекрытий" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/17093af0-953e-4124-8c98-0c1aa483b8f2.jpg" 
+                          alt="Банный комплекс Парк Малевича - заливка бетоном" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/c61255e7-6c4c-4f69-912c-31ee5e5c44ca.jpg" 
+                          alt="Банный комплекс Парк Малевича - финальная заливка" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/5dffe315-031b-4bde-ab3a-04d22c71e045.jpg" 
+                          alt="Банный комплекс Парк Малевича - готовые конструкции" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/171b0ef3-e569-41ca-80d4-b45473861b0a.jpg" 
+                          alt="Банный комплекс Парк Малевича - возведение стен" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/c4e4d240-375c-4990-affe-e21bde369c66.jpg" 
+                          alt="Банный комплекс Парк Малевича - фундаментная плита готова" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/d0f00c39-b5b8-49f8-8f7a-2be5782faed7.jpeg" 
+                          alt="Банный комплекс Парк Малевича - монолитные работы в процессе" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/9d608299-d5d7-46d5-80d8-9c4babc333d5.jpeg" 
+                          alt="Банный комплекс Парк Малевича - вид с высоты" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/e4851a9a-6b9f-4ff2-b344-c13e6db5c472.jpeg" 
+                          alt="Банный комплекс Парк Малевича - детальные работы по опалубке" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/cc4baea2-36ab-40a5-8b62-e22dcbec633d.jpeg" 
+                          alt="Банный комплекс Парк Малевича - общий вид строительства" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </>
+                  )}
                   {index !== 0 && (
                     <>
                       <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">

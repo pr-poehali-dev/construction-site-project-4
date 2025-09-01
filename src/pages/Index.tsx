@@ -4,110 +4,107 @@ import Icon from "@/components/ui/icon";
 import { Badge } from "@/components/ui/badge";
 
 const Index = () => {
-  const constructionStages = [
-    {
-      title: "Фундаментные работы",
-      description: "Разработка котлована и заливка фундаментной плиты",
-      status: "completed",
-      images: [
-        "https://cdn.poehali.dev/files/4fa810d1-025e-4ea1-93e8-fb43c06648d3.jpeg",
-        "https://cdn.poehali.dev/files/81888982-8d3a-4592-8c12-c3bea0109cc4.jpeg"
-      ]
+  const services = [
+    { 
+      icon: "HardHat", 
+      title: "Монолитные работы", 
+      description: "МКД и ИЖС",
+      details: ["МКД", "ИЖС"]
     },
-    {
-      title: "Монолитные работы",
-      description: "Возведение монолитного каркаса зданий",
-      status: "in_progress",
-      images: [
-        "https://cdn.poehali.dev/files/c265fede-7d4e-49d6-982f-c6c7fcdccdfb.jpeg",
-        "https://cdn.poehali.dev/files/9001cc5b-552b-4b25-b6fc-96d1da3ca65c.jpeg",
-        "https://cdn.poehali.dev/files/2a164ef2-288e-4429-b266-6e400b3a57a0.jpeg",
-        "https://cdn.poehali.dev/files/66c46858-314a-4c03-858a-138cb7ce51a5.jpeg"
-      ]
+    { 
+      icon: "Building2", 
+      title: "Генеральный подряд", 
+      description: "Полный цикл строительства под ключ",
+      details: []
     },
-    {
-      title: "Строительство корпусов",
-      description: "Возведение жилых корпусов различной этажности",
-      status: "in_progress",
-      images: [
-        "https://cdn.poehali.dev/files/235102ae-7c92-42eb-9343-6c5b1341db58.jpeg",
-        "https://cdn.poehali.dev/files/b107ebdb-3d99-40ae-abb4-9fbbc6219633.jpeg",
-        "https://cdn.poehali.dev/files/d7cdbbbc-70a0-4c38-9678-f0424451490b.jpeg",
-        "https://cdn.poehali.dev/files/dccd339b-cdc0-4d13-8c8a-184294ef1db6.jpeg"
-      ]
+    { 
+      icon: "Settings", 
+      title: "Инженерные сети", 
+      description: "Теплосети, водопровод, канализация",
+      details: ["Теплосети", "Водопровод", "Канализация"]
     },
-    {
-      title: "Отделочные работы",
-      description: "Фасадные работы и благоустройство территории",
-      status: "planned",
-      images: [
-        "https://cdn.poehali.dev/files/8c7c14c6-bd9d-4fbf-8232-9012424155ec.jpeg"
-      ]
+    { 
+      icon: "Factory", 
+      title: "Промышленное строительство", 
+      description: "Склады, сортировочные центры, ангары",
+      details: ["Склады", "Сортировочные центры", "Ангары"]
+    },
+    { 
+      icon: "Truck", 
+      title: "Земляные работы", 
+      description: "Разработка котлованов, рекультивация",
+      details: ["Разработка котлованов", "Рекультивация земель"]
+    },
+    { 
+      icon: "Trees", 
+      title: "Благоустройство", 
+      description: "Комплексное благоустройство территорий",
+      details: []
+    },
+    { 
+      icon: "Building", 
+      title: "Коммерческое строительство", 
+      description: "Паркинги, спорткомплексы, МФЦ",
+      details: ["Паркинги", "Спорткомплексы", "МФЦ"]
+    },
+    { 
+      icon: "PenTool", 
+      title: "Проектирование", 
+      description: "Архитектурное и техническое проектирование",
+      details: []
     }
   ];
 
-  const projectInfo = {
-    name: "ЖК Квартал Строгино",
-    developer: "ГК Самолет",
-    location: "г. Москва, район Строгино",
-    area: "17,000 м³",
-    completion: "2025 год",
-    apartments: "1,200+ квартир",
-    buildings: "8 корпусов"
-  };
+  const projects = [
+    { title: "ЖК Алхимово 5 очередь", type: "Монолитные работы", area: "17,000 м³", client: "ГК Самолет" },
+    { title: "ЖК Остафьево 4 очередь", type: "Монолитные работы", area: "12,000 м³", client: "ГК Самолет" },
+    { title: "ЖК Квартал Марьино 1 очередь", type: "Монолитные работы", area: "18,000 м³", client: "ГК Самолет" },
+    { title: "ЖК Квартал Строгино 1 очередь", type: "Монолитные работы", area: "17,000 м³", client: "ГК Самолет" },
+    { title: "ЖК Молжаниново 3 очередь, дом 6", type: "Монолитные работы", area: "8,000 м³", client: "ГК Самолет" },
+    { title: "ЖК Пятницкие Луга, Паркинг", type: "Монолитные работы", area: "3,000 м³", client: "ГК Самолет" },
+    { title: "ЖК Пятницкие Луга, Детский сад", type: "Монолитные работы", area: "2,400 м³", client: "ГК Самолет" },
+    { title: "ЖК Пятницкие Луга, ЛОС", type: "Монолитные работы", area: "4,000 м³", client: "ГК Самолет" },
+    { title: "Объект 11 парковая, корпус 38 и 39", type: "Монолитные работы", area: "42,000 м³", client: "ПИК" },
+    { title: "Спорткомплекс Парк Малевича", type: "Монолитные работы", area: "4,500 м³", client: "ООО Премиум Строй" },
+    { title: "Банный комплекс с бассейном Парк Малевича", type: "Монолитные работы", area: "4,700 м³", client: "ООО Рост" },
+    { title: "ЖК Монс", type: "Монолитные работы", area: "68,000 м³", client: "Брусника" },
+    { title: "ЖК Первый Квартал, Видное", type: "Монолитные работы", area: "54,000 м³", client: "Брусника" }
+  ];
+
+  const certificates = [
+    "ISO 9001:2015",
+    "ISO 14001:2015", 
+    "OHSAS 18001",
+    "СРО проектирование",
+    "СРО строительство"
+  ];
 
   return (
     <div className="min-h-screen bg-background text-white">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('${constructionStages[1].images[0]}')`,
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/85" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-background/80" />
         
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
           <div className="mb-8 flex justify-center">
             <Icon name="Building2" size={80} className="text-primary animate-pulse" />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-primary to-steel-light bg-clip-text text-transparent">
-            ЖК Квартал Строгино
+            СУ-77
           </h1>
           <p className="text-xl md:text-2xl text-steel-light mb-8 max-w-3xl mx-auto">
-            Современный жилой комплекс в престижном районе Строгино. 
-            Монолитное строительство высочайшего качества.
+            Промышленное строительство с гарантией качества. 
+            Реализуем проекты любой сложности с применением передовых технологий.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-8">
               <Icon name="Phone" size={20} className="mr-2" />
-              Узнать о квартирах
+              Получить консультацию
             </Button>
             <Button variant="outline" size="lg" className="border-steel text-white hover:bg-steel/20">
-              <Icon name="Camera" size={20} className="mr-2" />
-              Посмотреть ход строительства
+              <Icon name="FileText" size={20} className="mr-2" />
+              Наши проекты
             </Button>
-          </div>
-          
-          {/* Project stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            <div className="bg-charcoal/60 backdrop-blur-sm rounded-lg p-4 border border-steel/20">
-              <div className="text-2xl font-bold text-primary mb-1">{projectInfo.buildings}</div>
-              <div className="text-steel-light text-sm">Корпусов</div>
-            </div>
-            <div className="bg-charcoal/60 backdrop-blur-sm rounded-lg p-4 border border-steel/20">
-              <div className="text-2xl font-bold text-primary mb-1">{projectInfo.apartments}</div>
-              <div className="text-steel-light text-sm">Квартир</div>
-            </div>
-            <div className="bg-charcoal/60 backdrop-blur-sm rounded-lg p-4 border border-steel/20">
-              <div className="text-2xl font-bold text-primary mb-1">{projectInfo.area}</div>
-              <div className="text-steel-light text-sm">Объём работ</div>
-            </div>
-            <div className="bg-charcoal/60 backdrop-blur-sm rounded-lg p-4 border border-steel/20">
-              <div className="text-2xl font-bold text-primary mb-1">{projectInfo.completion}</div>
-              <div className="text-steel-light text-sm">Сдача</div>
-            </div>
           </div>
         </div>
         
@@ -116,29 +113,25 @@ const Index = () => {
         <div className="absolute bottom-32 right-20 w-16 h-16 border-2 border-steel/40 rotate-12" />
       </section>
 
-      {/* Project Info Section */}
+      {/* About & Certificates Section */}
       <section className="py-20 px-6 bg-charcoal/50">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-primary">О проекте</h2>
+              <h2 className="text-4xl font-bold mb-6 text-primary">О компании</h2>
               <p className="text-steel-light mb-6 text-lg leading-relaxed">
-                ЖК "Квартал Строгино" - это современный жилой комплекс, возводимый 
-                по монолитной технологии. Проект реализуется ГК "Самолет" и станет 
-                новой жемчужиной престижного района Строгино.
+                Мы — ведущая строительная компания с 15-летним опытом в промышленном строительстве. 
+                Наша команда профессионалов реализует проекты от проектирования до сдачи объекта.
               </p>
-              <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <Icon name="MapPin" size={20} className="text-primary" />
-                  <span className="text-steel-light">{projectInfo.location}</span>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary">150+</div>
+                  <div className="text-steel-light">Завершенных проектов</div>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Icon name="Building" size={20} className="text-primary" />
-                  <span className="text-steel-light">Застройщик: {projectInfo.developer}</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Icon name="Calendar" size={20} className="text-primary" />
-                  <span className="text-steel-light">Планируемая сдача: {projectInfo.completion}</span>
+                <div className="w-px h-12 bg-steel/30" />
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary">15</div>
+                  <div className="text-steel-light">Лет на рынке</div>
                 </div>
               </div>
             </div>
@@ -147,29 +140,19 @@ const Index = () => {
               <CardContent className="p-6">
                 <h3 className="text-2xl font-semibold mb-4 text-primary flex items-center">
                   <Icon name="Award" size={24} className="mr-2" />
-                  Преимущества проекта
+                  Лицензии и сертификаты
                 </h3>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3">
-                    <Icon name="CheckCircle" size={16} className="text-primary" />
-                    <span className="text-steel-light">Монолитная технология строительства</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Icon name="CheckCircle" size={16} className="text-primary" />
-                    <span className="text-steel-light">Престижный район Строгино</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Icon name="CheckCircle" size={16} className="text-primary" />
-                    <span className="text-steel-light">Развитая инфраструктура</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Icon name="CheckCircle" size={16} className="text-primary" />
-                    <span className="text-steel-light">Близость к природным зонам</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Icon name="CheckCircle" size={16} className="text-primary" />
-                    <span className="text-steel-light">Современные планировки</span>
-                  </div>
+                <div className="grid grid-cols-2 gap-3">
+                  {certificates.map((cert, index) => (
+                    <Badge key={index} variant="outline" className="border-primary/30 text-white justify-center py-2">
+                      {cert}
+                    </Badge>
+                  ))}
+                </div>
+                <div className="mt-4 p-4 bg-primary/10 rounded-lg">
+                  <p className="text-sm text-steel-light">
+                    Все работы выполняются в соответствии с международными стандартами качества
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -177,53 +160,281 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Construction Progress Section */}
+      {/* Services Section */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4 text-primary">Ход строительства</h2>
-          <p className="text-center text-steel-light mb-12">Актуальные фотографии с площадки</p>
+          <h2 className="text-4xl font-bold text-center mb-12 text-primary">Наши услуги</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {services.map((service, index) => (
+              <Card key={index} className="bg-charcoal/40 border-steel/20 hover:border-primary/50 transition-colors group">
+                <CardContent className="p-6 text-center">
+                  <div className="mb-4 flex justify-center">
+                    <div className="p-4 bg-primary/20 rounded-full group-hover:bg-primary/30 transition-colors">
+                      <Icon name={service.icon as any} size={32} className="text-primary" />
+                    </div>
+                  </div>
+                  <h3 className="text-lg font-semibold mb-3 text-white">{service.title}</h3>
+                  <p className="text-steel-light text-sm mb-3">{service.description}</p>
+                  {service.details.length > 0 && (
+                    <div className="mt-3 flex flex-wrap gap-1 justify-center">
+                      {service.details.map((detail, detailIndex) => (
+                        <Badge key={detailIndex} variant="outline" className="border-primary/30 text-xs text-steel-light">
+                          {detail}
+                        </Badge>
+                      ))}
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Gallery Section */}
+      <section className="py-20 px-6 bg-charcoal/50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4 text-primary">Галерея выполненных работ</h2>
+          <p className="text-center text-steel-light mb-12">Монолитные работы - наши завершённые проекты</p>
           
-          <div className="space-y-16">
-            {constructionStages.map((stage, index) => (
-              <div key={index} className="relative">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className={`w-4 h-4 rounded-full ${
-                    stage.status === 'completed' ? 'bg-green-500' :
-                    stage.status === 'in_progress' ? 'bg-primary' :
-                    'bg-steel/40'
-                  }`} />
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-semibold text-white mb-2">{stage.title}</h3>
-                    <p className="text-steel-light mb-2">{stage.description}</p>
-                    <Badge variant="outline" className={`
-                      ${stage.status === 'completed' ? 'border-green-500/30 text-green-400' :
-                        stage.status === 'in_progress' ? 'border-primary/30 text-primary' :
-                        'border-steel/30 text-steel-light'}
-                    `}>
-                      {stage.status === 'completed' ? 'Завершено' :
-                       stage.status === 'in_progress' ? 'В процессе' :
-                       'Планируется'}
-                    </Badge>
+          <div className="space-y-12">
+            {projects.map((project, index) => (
+              <div key={index} className="border border-steel/20 rounded-lg bg-charcoal/20 p-6">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-semibold text-white mb-2">{project.title}</h3>
+                  <div className="flex flex-wrap gap-4 text-sm">
+                    <span className="text-steel-light">Объём: <span className="text-primary font-semibold">{project.area}</span></span>
+                    <span className="text-steel-light">Заказчик: <span className="text-white">{project.client}</span></span>
+                    <Badge className="bg-primary/20 text-primary border-primary/30">Завершён</Badge>
                   </div>
                 </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                  {stage.images.map((image, imgIndex) => (
-                    <div key={imgIndex} className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30 group">
-                      <img 
-                        src={image}
-                        alt={`${stage.title} - фото ${imgIndex + 1}`}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
-                        loading="lazy"
-                      />
-                    </div>
-                  ))}
-                </div>
                 
-                {/* Timeline line */}
-                {index < constructionStages.length - 1 && (
-                  <div className="absolute left-2 top-16 w-px h-16 bg-steel/30" />
-                )}
+                {/* Project photos */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {index === 0 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/4b96e253-2efc-4f3f-b526-a3cbf8cf0372.jpg" 
+                          alt="ЖК Алхимово - монолитные работы" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/59285193-efff-49b6-9aa1-17ec154d0d90.jpg" 
+                          alt="ЖК Алхимово - общий вид комплекса" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/a589f928-d2e7-4cc2-a814-a2ab69455dce.jpg" 
+                          alt="ЖК Алхимово - строительство высотной части" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/e74049c2-2554-454c-b82f-ef9f6c2aab40.jpg" 
+                          alt="ЖК Алхимово - монолитный каркас зимой" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/fe46fafb-0492-45cb-9fe9-1c23766551e5.jpg" 
+                          alt="ЖК Алхимово - многоэтажное строительство" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/e835778b-7108-4966-84f7-d7adbb43957f.jpg" 
+                          alt="ЖК Алхимово - фасадные работы" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/e223f9fc-3d08-404e-b77a-8ac450362a37.jpg" 
+                          alt="ЖК Алхимово - завершающий этап строительства" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/f2ec8fa4-9e40-445a-926a-8aea791d53b6.jpg" 
+                          alt="ЖК Алхимово - готовый комплекс" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {index === 10 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/1d95044b-479f-4a07-866c-3fee1a5c78c9.jpg" 
+                          alt="Банный комплекс Парк Малевича - армирование плиты" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/356d1752-0c01-47c1-ad68-3199f07b65e0.jpg" 
+                          alt="Банный комплекс Парк Малевича - фундаментная плита" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/83deb01e-b0c3-4ae3-9911-e02d6bba7cb0.jpg" 
+                          alt="Банный комплекс Парк Малевича - зимние работы" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/f2e5d9ab-f28b-48db-91f5-bbcbda955d97.jpg" 
+                          alt="Банный комплекс Парк Малевича - монтаж опалубки" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/026fa085-775e-416e-b748-79c1d3a128c5.jpg" 
+                          alt="Банный комплекс Парк Малевича - армирование перекрытий" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/17093af0-953e-4124-8c98-0c1aa483b8f2.jpg" 
+                          alt="Банный комплекс Парк Малевича - заливка бетоном" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/c61255e7-6c4c-4f69-912c-31ee5e5c44ca.jpg" 
+                          alt="Банный комплекс Парк Малевича - финальная заливка" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/5dffe315-031b-4bde-ab3a-04d22c71e045.jpg" 
+                          alt="Банный комплекс Парк Малевича - готовые конструкции" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/171b0ef3-e569-41ca-80d4-b45473861b0a.jpg" 
+                          alt="Банный комплекс Парк Малевича - возведение стен" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/c4e4d240-375c-4990-affe-e21bde369c66.jpg" 
+                          alt="Банный комплекс Парк Малевича - фундаментная плита готова" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/d0f00c39-b5b8-49f8-8f7a-2be5782faed7.jpeg" 
+                          alt="Банный комплекс Парк Малевича - монолитные работы в процессе" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/9d608299-d5d7-46d5-80d8-9c4babc333d5.jpeg" 
+                          alt="Банный комплекс Парк Малевича - вид с высоты" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/e4851a9a-6b9f-4ff2-b344-c13e6db5c472.jpeg" 
+                          alt="Банный комплекс Парк Малевича - детальные работы по опалубке" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/cc4baea2-36ab-40a5-8b62-e22dcbec633d.jpeg" 
+                          alt="Банный комплекс Парк Малевича - общий вид строительства" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {index === 2 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/ce18633e-1ebf-4d16-9e12-481ec03119ed.jpg" 
+                          alt="ЖК Квартал Марьино - монолитный каркас" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/2a6f6dab-e4f3-474e-a25c-ed84bf4fb51b.jpg" 
+                          alt="ЖК Квартал Марьино - высотная часть" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/9158d76d-8c50-4348-ba1c-e4853ee930e0.jpg" 
+                          alt="ЖК Квартал Марьино - строительство зимой" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/37eaf8ae-baa1-469b-883d-627d13e2b111.jpg" 
+                          alt="ЖК Квартал Марьино - армирование фундамента" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/467201b2-9293-47d4-84d4-0e1619481186.jpg" 
+                          alt="ЖК Квартал Марьино - возведение этажей" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {index !== 0 && index !== 2 && index !== 10 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
+                        <div className="text-center">
+                          <Icon name="Image" size={32} className="text-steel/60 mb-2 mx-auto" />
+                          <p className="text-steel/60 text-sm">Фото будет загружено</p>
+                        </div>
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
+                        <div className="text-center">
+                          <Icon name="Image" size={32} className="text-steel/60 mb-2 mx-auto" />
+                          <p className="text-steel/60 text-sm">Фото будет загружено</p>
+                        </div>
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
+                        <div className="text-center">
+                          <Icon name="Image" size={32} className="text-steel/60 mb-2 mx-auto" />
+                          <p className="text-steel/60 text-sm">Фото будет загружено</p>
+                        </div>
+                      </div>
+                    </>
+                  )}
+                </div>
               </div>
             ))}
           </div>
@@ -231,42 +442,42 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 px-6 bg-charcoal/50">
+      <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8 text-primary">Контакты застройщика</h2>
+          <h2 className="text-4xl font-bold mb-8 text-primary">Контакты</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="flex flex-col items-center">
               <div className="p-4 bg-primary/20 rounded-full mb-4">
-                <Icon name="Building" size={24} className="text-primary" />
+                <Icon name="MapPin" size={24} className="text-primary" />
               </div>
-              <h3 className="font-semibold text-white mb-2">Застройщик</h3>
-              <p className="text-steel-light">ГК "Самолет"</p>
+              <h3 className="font-semibold text-white mb-2">Адрес</h3>
+              <p className="text-steel-light">г. Москва, ул. Промышленная, 25</p>
             </div>
             <div className="flex flex-col items-center">
               <div className="p-4 bg-primary/20 rounded-full mb-4">
                 <Icon name="Phone" size={24} className="text-primary" />
               </div>
-              <h3 className="font-semibold text-white mb-2">Отдел продаж</h3>
-              <p className="text-steel-light">+7 (495) 777-77-77</p>
+              <h3 className="font-semibold text-white mb-2">Телефон</h3>
+              <p className="text-steel-light">+7 (495) 123-45-67</p>
             </div>
             <div className="flex flex-col items-center">
               <div className="p-4 bg-primary/20 rounded-full mb-4">
-                <Icon name="MapPin" size={24} className="text-primary" />
+                <Icon name="Mail" size={24} className="text-primary" />
               </div>
-              <h3 className="font-semibold text-white mb-2">Офис продаж</h3>
-              <p className="text-steel-light">ул. Строгинский бульвар</p>
+              <h3 className="font-semibold text-white mb-2">Email</h3>
+              <p className="text-steel-light">info@stalstroy.ru</p>
             </div>
           </div>
           
           <Card className="bg-charcoal/40 border-steel/30">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-4 text-primary">Интересует квартира в ЖК?</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-primary">Готовы начать проект?</h3>
               <p className="text-steel-light mb-6">
-                Получите консультацию специалиста и узнайте о доступных вариантах
+                Свяжитесь с нами для получения консультации и расчета стоимости вашего проекта
               </p>
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold">
                 <Icon name="MessageCircle" size={20} className="mr-2" />
-                Записаться на показ
+                Заказать звонок
               </Button>
             </CardContent>
           </Card>
@@ -278,10 +489,10 @@ const Index = () => {
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex justify-center items-center mb-6">
             <Icon name="Building2" size={32} className="text-primary mr-3" />
-            <span className="text-2xl font-bold text-white">ЖК Квартал Строгино</span>
+            <span className="text-2xl font-bold text-white">СУ-77</span>
           </div>
-          <p className="text-steel-light mb-4">Современное жилье в престижном районе</p>
-          <p className="text-steel text-sm">© 2024 ГК "Самолет". Все права защищены.</p>
+          <p className="text-steel-light mb-4">Профессиональное промышленное строительство</p>
+          <p className="text-steel text-sm">© 2024 СУ-77. Все права защищены.</p>
         </div>
       </footer>
     </div>

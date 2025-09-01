@@ -668,7 +668,30 @@ const Index = () => {
                       </div>
                     </>
                   )}
-                  {index !== 0 && index !== 1 && index !== 2 && index !== 3 && index !== 4 && index !== 10 && index !== 11 && (
+                  {index === 5 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/16589eed-e722-43c6-9004-1daaf0c8e65d.jpg" 
+                          alt="ЖК Пятницкие Луга, Паркинг - строительство паркинга" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
+                        <div className="text-center">
+                          <Icon name="Image" size={32} className="text-steel/60 mb-2 mx-auto" />
+                          <p className="text-steel/60 text-sm">Фото будет загружено</p>
+                        </div>
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
+                        <div className="text-center">
+                          <Icon name="Image" size={32} className="text-steel/60 mb-2 mx-auto" />
+                          <p className="text-steel/60 text-sm">Фото будет загружено</p>
+                        </div>
+                      </div>
+                    </>
+                  )}
+                  {index !== 0 && index !== 1 && index !== 2 && index !== 3 && index !== 4 && index !== 5 && index !== 10 && index !== 11 && (
                     <>
                       <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
                         <div className="text-center">

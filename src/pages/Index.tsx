@@ -691,7 +691,32 @@ const Index = () => {
                       </div>
                     </>
                   )}
-                  {index !== 0 && index !== 1 && index !== 2 && index !== 3 && index !== 4 && index !== 5 && index !== 10 && index !== 11 && (
+                  {index === 6 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/0aaa65e5-a515-488f-97b1-27381dc8e7b5.jpg" 
+                          alt="ЖК Пятницкие Луга, Детский сад - строительство детского сада" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/caca704e-751e-4db6-a742-6cf1af91a719.jpg" 
+                          alt="ЖК Пятницкие Луга, Детский сад - монолитные работы" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/eedad0c2-e022-466a-adfe-3f67fce34cf3.jpg" 
+                          alt="ЖК Пятницкие Луга, Детский сад - внутренние работы" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {index !== 0 && index !== 1 && index !== 2 && index !== 3 && index !== 4 && index !== 5 && index !== 6 && index !== 10 && index !== 11 && (
                     <>
                       <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
                         <div className="text-center">

@@ -372,7 +372,46 @@ const Index = () => {
                       </div>
                     </>
                   )}
-                  {index !== 0 && (
+                  {index === 2 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/ce18633e-1ebf-4d16-9e12-481ec03119ed.jpg" 
+                          alt="ЖК Квартал Марьино - монолитный каркас" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/2a6f6dab-e4f3-474e-a25c-ed84bf4fb51b.jpg" 
+                          alt="ЖК Квартал Марьино - высотная часть" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/9158d76d-8c50-4348-ba1c-e4853ee930e0.jpg" 
+                          alt="ЖК Квартал Марьино - строительство зимой" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/37eaf8ae-baa1-469b-883d-627d13e2b111.jpg" 
+                          alt="ЖК Квартал Марьино - армирование фундамента" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/467201b2-9293-47d4-84d4-0e1619481186.jpg" 
+                          alt="ЖК Квартал Марьино - возведение этажей" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {index !== 0 && index !== 2 && index !== 10 && (
                     <>
                       <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
                         <div className="text-center">

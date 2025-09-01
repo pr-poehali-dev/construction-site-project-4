@@ -465,7 +465,39 @@ const Index = () => {
                       </div>
                     </>
                   )}
-                  {index !== 0 && index !== 2 && index !== 4 && index !== 10 && (
+                  {index === 11 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/4c1a6ec9-72a4-407c-87f6-931baf984912.jpg" 
+                          alt="ЖК Первый Квартал, Видное - общий вид строительства" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/89c8eaa9-85da-4c04-8a3a-781dcb4e3561.jpg" 
+                          alt="ЖК Первый Квартал, Видное - монолитные работы" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/65b30a8f-4a37-4d3f-95e9-dda58e346a9a.jpg" 
+                          alt="ЖК Первый Квартал, Видное - заливка бетона" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/82ea12c3-dd54-4422-978b-60fb5811f056.jpg" 
+                          alt="ЖК Первый Квартал, Видное - панорамный вид комплекса" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {index !== 0 && index !== 2 && index !== 4 && index !== 10 && index !== 11 && (
                     <>
                       <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
                         <div className="text-center">

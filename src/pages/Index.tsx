@@ -412,7 +412,60 @@ const Index = () => {
                       </div>
                     </>
                   )}
-                  {index !== 0 && index !== 2 && index !== 10 && (
+                  {index === 4 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/5866b2a6-a50c-43bf-a4c5-3d847a36ee91.jpg" 
+                          alt="ЖК Молжаниново - монолитный каркас" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/e4fc9f0d-1027-4a1e-aa5c-015a5c9797f7.jpg" 
+                          alt="ЖК Молжаниново - армирование фундамента" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/2c27f452-d063-49c7-8e61-9a821f2b63aa.jpg" 
+                          alt="ЖК Молжаниново - возведение корпуса" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/366b7255-7b8e-4cba-a335-cf073fd17a30.jpg" 
+                          alt="ЖК Молжаниново - строительство высотки" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/05c790f4-98b3-4620-9ce7-6da8b1ad8071.jpg" 
+                          alt="ЖК Молжаниново - подземная часть" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/2e4e3262-6cbc-4fc7-be1c-3e5aab4e43a7.jpg" 
+                          alt="ЖК Молжаниново - комплекс зданий" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/2aba6471-c700-44b4-b9cc-a649179926e3.jpg" 
+                          alt="ЖК Молжаниново - завершающий этап" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {index !== 0 && index !== 2 && index !== 4 && index !== 10 && (
                     <>
                       <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
                         <div className="text-center">

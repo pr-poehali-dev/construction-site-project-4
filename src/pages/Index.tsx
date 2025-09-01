@@ -762,7 +762,39 @@ const Index = () => {
                       </div>
                     </>
                   )}
-                  {index !== 0 && index !== 1 && index !== 2 && index !== 3 && index !== 4 && index !== 5 && index !== 6 && index !== 7 && index !== 10 && index !== 11 && (
+                  {index === 8 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/885d5e20-6e06-48be-a1e1-75f0dc73e810.jpeg" 
+                          alt="Объект 11 парковая - жилой комплекс в процессе строительства" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/5f9e3393-688c-4a41-a05f-6870b3a35fb4.jpeg" 
+                          alt="Объект 11 парковая - многоэтажные корпуса с башенным краном" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/a038bd74-18b2-43ce-a4c9-04e519056e14.jpeg" 
+                          alt="Объект 11 парковая - строительная площадка с материалами" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/72dbe04c-debd-470e-aaa0-b2da79f5fb40.jpeg" 
+                          alt="Объект 11 парковая - фасад здания с клинкерной плиткой" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {index !== 0 && index !== 1 && index !== 2 && index !== 3 && index !== 4 && index !== 5 && index !== 6 && index !== 7 && index !== 8 && index !== 10 && index !== 11 && (
                     <>
                       <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
                         <div className="text-center">

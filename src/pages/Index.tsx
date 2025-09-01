@@ -67,7 +67,7 @@ const Index = () => {
     { title: "Объект 11 парковая, корпус 38 и 39", type: "Монолитные работы", area: "42,000 м³", client: "ПИК" },
     { title: "Спорткомплекс Парк Малевича", type: "Монолитные работы", area: "4,500 м³", client: "ООО Премиум Строй" },
     { title: "Банный комплекс с бассейном Парк Малевича", type: "Монолитные работы", area: "4,700 м³", client: "ООО Рост" },
-    { title: "ЖК Монс", type: "Монолитные работы", area: "68,000 м³", client: "Брусника" },
+
     { title: "ЖК Первый Квартал, Видное", type: "Монолитные работы", area: "54,000 м³", client: "Брусника" }
   ];
 
@@ -439,7 +439,7 @@ const Index = () => {
                     </>
                   )}
 
-                  {index === 11 && (
+                  {index === 10 && (
                     <>
                       <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
                         <img 
@@ -798,7 +798,7 @@ const Index = () => {
                       </div>
                     </>
                   )}
-                  {index !== 0 && index !== 1 && index !== 2 && index !== 3 && index !== 4 && index !== 5 && index !== 6 && index !== 7 && index !== 8 && index !== 9 && index !== 11 && (
+                  {index !== 0 && index !== 1 && index !== 2 && index !== 3 && index !== 4 && index !== 5 && index !== 6 && index !== 7 && index !== 8 && index !== 9 && index !== 10 && (
                     <>
                       <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
                         <div className="text-center">

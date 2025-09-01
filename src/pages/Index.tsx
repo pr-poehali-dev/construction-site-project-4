@@ -587,7 +587,88 @@ const Index = () => {
                       </div>
                     </>
                   )}
-                  {index !== 0 && index !== 1 && index !== 2 && index !== 4 && index !== 10 && index !== 11 && (
+                  {index === 3 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/fb27d340-109d-4c11-8a42-6878d99ca330.jpeg" 
+                          alt="ЖК Квартал Строгино - высотное строительство" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/26689fd5-0802-4c5b-a362-3a35f4ed5f8d.jpeg" 
+                          alt="ЖК Квартал Строгино - монолитные работы" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/1261b60c-d96b-40ab-994a-91ce83fb2828.jpeg" 
+                          alt="ЖК Квартал Строгино - строительство комплекса" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/cb8a4a1d-1bf7-4d65-8ac5-166e8a5773a6.jpeg" 
+                          alt="ЖК Квартал Строгино - возведение каркаса" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/8d95111b-9c5e-45cb-96b3-f18cef9c53e1.jpeg" 
+                          alt="ЖК Квартал Строгино - многоэтажное здание" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/65adda31-c8c7-4009-947c-c104f7532429.jpeg" 
+                          alt="ЖК Квартал Строгино - жилой корпус" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/91d19e9f-a819-498b-98b2-a34a8802fad9.jpeg" 
+                          alt="ЖК Квартал Строгино - подземная парковка" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/43137d06-b5c0-40ca-93a6-7857cd105191.jpeg" 
+                          alt="ЖК Квартал Строгино - монолитные конструкции" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/99faed79-5e6b-4ef7-bd1a-af8d29478b47.jpeg" 
+                          alt="ЖК Квартал Строгино - армирование фундамента" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/efe20fc7-b3bd-4229-be2b-89d4f37d3d1b.jpeg" 
+                          alt="ЖК Квартал Строгино - строительная площадка" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/3bf76632-7f22-41b7-9a9a-8b8e12750f63.jpeg" 
+                          alt="ЖК Квартал Строгино - опалубочные работы" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {index !== 0 && index !== 1 && index !== 2 && index !== 3 && index !== 4 && index !== 10 && index !== 11 && (
                     <>
                       <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
                         <div className="text-center">

@@ -435,69 +435,42 @@ const Index = () => {
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                         />
                       </div>
-                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
-                        <img 
-                          src="https://cdn.poehali.dev/files/366b7255-7b8e-4cba-a335-cf073fd17a30.jpg" 
-                          alt="ЖК Молжаниново - строительство высотки" 
-                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
-                        <img 
-                          src="https://cdn.poehali.dev/files/05c790f4-98b3-4620-9ce7-6da8b1ad8071.jpg" 
-                          alt="ЖК Молжаниново - подземная часть" 
-                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
-                        <img 
-                          src="https://cdn.poehali.dev/files/2e4e3262-6cbc-4fc7-be1c-3e5aab4e43a7.jpg" 
-                          alt="ЖК Молжаниново - комплекс зданий" 
-                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
-                        <img 
-                          src="https://cdn.poehali.dev/files/2aba6471-c700-44b4-b9cc-a649179926e3.jpg" 
-                          alt="ЖК Молжаниново - завершающий этап" 
-                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
+
                     </>
                   )}
                   {index === 11 && (
                     <>
                       <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
                         <img 
-                          src="https://cdn.poehali.dev/files/4c1a6ec9-72a4-407c-87f6-931baf984912.jpg" 
-                          alt="ЖК Первый Квартал, Видное - общий вид строительства" 
+                          src="https://cdn.poehali.dev/files/366b7255-7b8e-4cba-a335-cf073fd17a30.jpg" 
+                          alt="ЖК Первый Квартал, Видное - строительство высотки" 
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                         />
                       </div>
                       <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
                         <img 
-                          src="https://cdn.poehali.dev/files/89c8eaa9-85da-4c04-8a3a-781dcb4e3561.jpg" 
-                          alt="ЖК Первый Квартал, Видное - монолитные работы" 
+                          src="https://cdn.poehali.dev/files/05c790f4-98b3-4620-9ce7-6da8b1ad8071.jpg" 
+                          alt="ЖК Первый Квартал, Видное - подземная часть" 
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                         />
                       </div>
                       <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
                         <img 
-                          src="https://cdn.poehali.dev/files/65b30a8f-4a37-4d3f-95e9-dda58e346a9a.jpg" 
-                          alt="ЖК Первый Квартал, Видное - заливка бетона" 
+                          src="https://cdn.poehali.dev/files/2e4e3262-6cbc-4fc7-be1c-3e5aab4e43a7.jpg" 
+                          alt="ЖК Первый Квартал, Видное - комплекс зданий" 
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                         />
                       </div>
                       <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
                         <img 
-                          src="https://cdn.poehali.dev/files/82ea12c3-dd54-4422-978b-60fb5811f056.jpg" 
-                          alt="ЖК Первый Квартал, Видное - панорамный вид комплекса" 
+                          src="https://cdn.poehali.dev/files/2aba6471-c700-44b4-b9cc-a649179926e3.jpg" 
+                          alt="ЖК Первый Квартал, Видное - завершающий этап" 
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                         />
                       </div>
                     </>
                   )}
-                  {index !== 0 && index !== 2 && index !== 4 && index !== 10 && index !== 11 && (
+                  {index !== 0 && index !== 2 && index !== 4 && index !== 11 && (
                     <>
                       <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
                         <div className="text-center">

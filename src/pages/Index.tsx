@@ -190,33 +190,46 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Projects Section */}
+      {/* Projects Gallery Section */}
       <section className="py-20 px-6 bg-charcoal/50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-primary">Реализованные проекты</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <h2 className="text-4xl font-bold text-center mb-4 text-primary">Галерея выполненных работ</h2>
+          <p className="text-center text-steel-light mb-12">Монолитные работы - наши завершённые проекты</p>
+          
+          <div className="space-y-12">
             {projects.map((project, index) => (
-              <Card key={index} className="bg-steel-dark/20 border-steel/30 overflow-hidden group hover:border-primary/50 transition-colors">
-                <div className="h-48 bg-gradient-to-br from-steel to-charcoal relative">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Icon name="Building" size={48} className="text-primary/70" />
-                  </div>
-                  <div className="absolute top-4 right-4">
-                    <Badge className="bg-primary/90">Завершен</Badge>
+              <div key={index} className="border border-steel/20 rounded-lg bg-charcoal/20 p-6">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-semibold text-white mb-2">{project.title}</h3>
+                  <div className="flex flex-wrap gap-4 text-sm">
+                    <span className="text-steel-light">Объём: <span className="text-primary font-semibold">{project.area}</span></span>
+                    <span className="text-steel-light">Заказчик: <span className="text-white">{project.client}</span></span>
+                    <Badge className="bg-primary/20 text-primary border-primary/30">Завершён</Badge>
                   </div>
                 </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-white">{project.title}</h3>
-                  <p className="text-steel-light mb-1">{project.type}</p>
-                  <p className="text-steel text-sm mb-3">Заказчик: {project.client}</p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-primary font-semibold">{project.area}</span>
-                    <Button variant="ghost" size="sm" className="text-primary hover:text-primary/80">
-                      <Icon name="ArrowRight" size={16} />
-                    </Button>
+                
+                {/* Placeholder for photos */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
+                    <div className="text-center">
+                      <Icon name="Image" size={32} className="text-steel/60 mb-2 mx-auto" />
+                      <p className="text-steel/60 text-sm">Фото будет загружено</p>
+                    </div>
                   </div>
-                </CardContent>
-              </Card>
+                  <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
+                    <div className="text-center">
+                      <Icon name="Image" size={32} className="text-steel/60 mb-2 mx-auto" />
+                      <p className="text-steel/60 text-sm">Фото будет загружено</p>
+                    </div>
+                  </div>
+                  <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
+                    <div className="text-center">
+                      <Icon name="Image" size={32} className="text-steel/60 mb-2 mx-auto" />
+                      <p className="text-steel/60 text-sm">Фото будет загружено</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>

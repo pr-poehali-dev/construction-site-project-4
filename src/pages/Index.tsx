@@ -56,9 +56,19 @@ const Index = () => {
   ];
 
   const projects = [
-    { title: "Завод металлоконструкций", type: "Промышленный объект", area: "15,000 м²" },
-    { title: "Торговый центр \"Стальной\"", type: "Коммерческая недвижимость", area: "8,500 м²" },
-    { title: "Складской комплекс", type: "Логистический центр", area: "25,000 м²" }
+    { title: "ЖК Алхимово 5 очередь", type: "Монолитные работы", area: "17,000 м³", client: "ГК Самолет" },
+    { title: "ЖК Остафьево 4 очередь", type: "Монолитные работы", area: "12,000 м³", client: "ГК Самолет" },
+    { title: "ЖК Квартал Марьино 1 очередь", type: "Монолитные работы", area: "18,000 м³", client: "ГК Самолет" },
+    { title: "ЖК Квартал Строгино 1 очередь", type: "Монолитные работы", area: "17,000 м³", client: "ГК Самолет" },
+    { title: "ЖК Молжаниново 3 очередь, дом 6", type: "Монолитные работы", area: "8,000 м³", client: "ГК Самолет" },
+    { title: "ЖК Пятницкие Луга, Паркинг", type: "Монолитные работы", area: "3,000 м³", client: "ГК Самолет" },
+    { title: "ЖК Пятницкие Луга, Детский сад", type: "Монолитные работы", area: "2,400 м³", client: "ГК Самолет" },
+    { title: "ЖК Пятницкие Луга, ЛОС", type: "Монолитные работы", area: "4,000 м³", client: "ГК Самолет" },
+    { title: "Объект 11 парковая, корпус 38 и 39", type: "Монолитные работы", area: "42,000 м³", client: "ПИК" },
+    { title: "Спорткомплекс Парк Малевича", type: "Монолитные работы", area: "4,500 м³", client: "ООО Премиум Строй" },
+    { title: "Банный комплекс с бассейном Парк Малевича", type: "Монолитные работы", area: "4,700 м³", client: "ООО Рост" },
+    { title: "ЖК Монс", type: "Монолитные работы", area: "68,000 м³", client: "Брусника" },
+    { title: "ЖК Первый Квартал, Видное", type: "Монолитные работы", area: "54,000 м³", client: "Брусника" }
   ];
 
   const certificates = [
@@ -197,7 +207,8 @@ const Index = () => {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-white">{project.title}</h3>
-                  <p className="text-steel-light mb-2">{project.type}</p>
+                  <p className="text-steel-light mb-1">{project.type}</p>
+                  <p className="text-steel text-sm mb-3">Заказчик: {project.client}</p>
                   <div className="flex justify-between items-center">
                     <span className="text-primary font-semibold">{project.area}</span>
                     <Button variant="ghost" size="sm" className="text-primary hover:text-primary/80">

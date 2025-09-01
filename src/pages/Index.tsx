@@ -70,10 +70,10 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-charcoal-dark via-charcoal to-steel-dark text-white">
+    <div className="min-h-screen bg-background text-white">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 to-charcoal-dark/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-background/80" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
           <div className="mb-8 flex justify-center">
             <Icon name="Building2" size={80} className="text-primary animate-pulse" />

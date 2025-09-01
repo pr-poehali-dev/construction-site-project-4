@@ -527,7 +527,67 @@ const Index = () => {
                       </div>
                     </>
                   )}
-                  {index !== 0 && index !== 2 && index !== 4 && index !== 10 && index !== 11 && (
+                  {index === 1 && (
+                    <>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/122b0004-d8f1-436e-a9d0-49f7ab811ee4.jpg" 
+                          alt="ЖК Остафьево - монолитные работы" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/5549d230-6f3b-454c-8be9-4c92df0643a1.jpg" 
+                          alt="ЖК Остафьево - каркас здания" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/61993186-2f79-4f6b-8ae1-dffc10c4bc56.jpg" 
+                          alt="ЖК Остафьево - возведение этажей" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/ee4f5fb2-3b94-476e-8af4-28f3561b7d56.jpg" 
+                          alt="ЖК Остафьево - строительство комплекса" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/c31119f1-7532-448c-839b-fa86b0556673.jpg" 
+                          alt="ЖК Остафьево - высотный дом" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/3614729b-41cf-41f0-9fdf-b15878143a88.jpg" 
+                          alt="ЖК Остафьево - армирование конструкций" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/b21008c4-8ad3-4080-a63b-bdc7d94f5d0f.jpg" 
+                          alt="ЖК Остафьево - монолитное строительство" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/24e72233-2f84-4724-8fc3-78380d52e6fb.jpg" 
+                          alt="ЖК Остафьево - активная стройка" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {index !== 0 && index !== 1 && index !== 2 && index !== 4 && index !== 10 && index !== 11 && (
                     <>
                       <div className="aspect-video bg-steel/20 rounded-lg border-2 border-dashed border-steel/40 flex items-center justify-center">
                         <div className="text-center">

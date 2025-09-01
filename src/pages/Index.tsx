@@ -468,6 +468,41 @@ const Index = () => {
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                         />
                       </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/721993f3-6309-4ca4-ac0f-27b329bd7350.jpg" 
+                          alt="ЖК Первый Квартал, Видное - панорамный вид строительства" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/612ee281-4b53-45b1-8ab6-013226aaab33.jpg" 
+                          alt="ЖК Первый Квартал, Видное - общий вид с высоты" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/126904f7-a6c0-4b96-a0a2-f9925547d2e8.jpg" 
+                          alt="ЖК Первый Квартал, Видное - строительные работы" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/adf62919-4172-4ef8-bf86-709c583d9f6c.jpg" 
+                          alt="ЖК Первый Квартал, Видное - вечерний вид стройки" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/1dc79884-3dc4-41d4-b2b9-8a1b6d2374d9.jpg" 
+                          alt="ЖК Первый Квартал, Видное - общий план комплекса" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
                     </>
                   )}
                   {index !== 0 && index !== 2 && index !== 4 && index !== 11 && (

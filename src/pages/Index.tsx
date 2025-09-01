@@ -35,7 +35,7 @@ const Index = () => {
             <Icon name="Building2" size={80} className="text-primary animate-pulse" />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-primary to-steel-light bg-clip-text text-transparent">
-            СТАЛЬ СТРОЙ
+            СУ-77
           </h1>
           <p className="text-xl md:text-2xl text-steel-light mb-8 max-w-3xl mx-auto">
             Промышленное строительство с гарантией качества. 
@@ -206,10 +206,10 @@ const Index = () => {
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex justify-center items-center mb-6">
             <Icon name="Building2" size={32} className="text-primary mr-3" />
-            <span className="text-2xl font-bold text-white">СТАЛЬ СТРОЙ</span>
+            <span className="text-2xl font-bold text-white">СУ-77</span>
           </div>
           <p className="text-steel-light mb-4">Профессиональное промышленное строительство</p>
-          <p className="text-steel text-sm">© 2024 Сталь Строй. Все права защищены.</p>
+          <p className="text-steel text-sm">© 2024 СУ-77. Все права защищены.</p>
         </div>
       </footer>
     </div>

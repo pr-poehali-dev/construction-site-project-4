@@ -471,6 +471,34 @@ const Index = () => {
                       </div>
                       <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
                         <img 
+                          src="https://cdn.poehali.dev/files/aaf4072c-d8ee-45d6-aabb-1a0c0bb28719.jpg" 
+                          alt="ЖК Первый Квартал, Видное - детальный вид строительной площадки с высоты" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/b51436e1-7216-4f5d-b213-ec1c239e97d7.jpg" 
+                          alt="ЖК Первый Квартал, Видное - активная работа кранов на стройплощадке" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/97e2ff8a-98d8-47e0-b1ff-33542c8159e0.jpg" 
+                          alt="ЖК Первый Квартал, Видное - вечерний вид строительства с бетонными работами" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
+                          src="https://cdn.poehali.dev/files/81cb1ed7-72cd-49f9-8fba-b3a70097a72d.jpg" 
+                          alt="ЖК Первый Квартал, Видное - широкая панорама жилого комплекса" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="aspect-video bg-steel/20 rounded-lg overflow-hidden border border-steel/30">
+                        <img 
                           src="https://cdn.poehali.dev/files/721993f3-6309-4ca4-ac0f-27b329bd7350.jpg" 
                           alt="ЖК Первый Квартал, Видное - панорамный вид строительства" 
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
